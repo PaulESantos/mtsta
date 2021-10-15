@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# mtsta <a href='https://github.com/PaulESantos/ppendemic'><img src='man/figures/mtstarl.png' align="right" height="220" width="150" /></a>
+# mtsta <a href='https://github.com/PaulESantos/mtsta'><img src='man/figures/mtstarl.png' align="right" height="220" width="150" /></a>
 
 <!-- badges: start -->
 
