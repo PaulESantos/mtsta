@@ -24,7 +24,7 @@ knitr::opts_chunk$set(
 
 <!-- badges: end -->
 
-The goal of mtsta is to ...
+This Red List of the tree species of the montane forests of the tropical Andes forms part of an ongoing research project to assess the conservation status and impact of climate change on the world’s montane tree species - trees at the “Top of the World”. The scope of this report is the tropical Andes in **Argentina, Bolivia, Colombia, Ecuador, Peru and Venezuela**
 
 ## Installation
 
@@ -34,27 +34,44 @@ You can install the released version of mtsta from [CRAN](https://CRAN.R-project
 install.packages("mtsta")
 ```
 
-## Example
+### Summary of results of this regional Red List report:
 
-This is a basic example which shows you how to solve a common problem:
+```{r summary_1, echo=FALSE}
+summ_df <- tibble::tribble(
+     ~Conservation.status, ~tag, ~Number.of.species,
+  "Critically Endangered", "CR",                 1L,
+             "Endangered", "EN",                42L,
+             "Vulnerable", "VU",                27L,
+        "Near Threatened", "NT",                20L,
+          "Least Concern", "LC",                29L,
+         "Data Deficient", "DD",                 8L,
+          "Not Evaluated", "NE",                 0L
+  )
 
-```{r example}
-#library(mtsta)
-## basic example code
+summ_df |> 
+  dplyr::select(1,3) |> 
+  janitor::adorn_totals() |> 
+  knitr::kable()
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
+###  Number of endemic tree species by country in the tropical Andes (Calderón et al. 2002; IUCN 2010; León-Yánez et al. 2011; León et al. 2006; Llamozas et al. 2003; Meneses and Beck 2005) together with the results of this regional assessment.
 
-```{r cars}
-summary(cars)
+
+```{r summary_2, echo=FALSE}
+summ_2 <- tibble::tribble(
+               ~Country, ~CR,  ~EN,  ~VU, ~NT, ~LC, ~DD, ~Subtotal,  ~NE, ~Total,
+              "Ecuador",  2L,  36L,  52L,  9L,  5L,  1L,      105L,  61L,   166L,
+                 "Peru",  9L,  31L,  15L,  2L,  3L, 10L,       70L,  50L,   120L,
+             "Colombia",  4L,   5L,   5L,  2L,  1L,  0L,       17L,  60L,    77L,
+              "Bolivia",  0L,   5L,   1L,  0L,  0L,  1L,        7L,  94L,   101L,
+            "Argentina",  0L,   0L,   0L,  0L,  0L,  0L,        0L,   3L,     3L,
+            "Venezuela",  0L,   0L,   0L,  0L,  0L,  0L,        0L,   0L,     0L,
+        "Total endemic", 15L,  77L,  73L, 13L,  9L, 12L,      199L, 268L,   467L,
+  "Regional assessment",  1L,  42L,  27L, 20L, 29L,  8L,      127L,   0L,   127L,
+          "Total Andes", 16L, 119L, 100L, 33L, 38L, 20L,      326L, 268L,   594L
+  )
+
+summ_2 |> 
+  knitr::kable()
 ```
 
-You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date. `devtools::build_readme()` is handy for this. You could also use GitHub Actions to re-render `README.Rmd` every time you push. An example workflow can be found here: <https://github.com/r-lib/actions/tree/master/examples>.
-
-You can also embed plots, for example:
-
-```{r pressure, echo = FALSE}
-plot(pressure)
-```
-
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub and CRAN.

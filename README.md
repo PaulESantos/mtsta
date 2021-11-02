@@ -14,7 +14,12 @@ status](https://www.r-pkg.org/badges/version/mtsta)](https://CRAN.R-project.org/
 
 <!-- badges: end -->
 
-The goal of mtsta is to …
+This Red List of the tree species of the montane forests of the tropical
+Andes forms part of an ongoing research project to assess the
+conservation status and impact of climate change on the world’s montane
+tree species - trees at the “Top of the World”. The scope of this report
+is the tropical Andes in **Argentina, Bolivia, Colombia, Ecuador, Peru
+and Venezuela**
 
 ## Installation
 
@@ -25,38 +30,29 @@ You can install the released version of mtsta from
 install.packages("mtsta")
 ```
 
-## Example
+### Summary of results of this regional Red List report:
 
-This is a basic example which shows you how to solve a common problem:
+| Conservation.status   | Number.of.species |
+|:----------------------|------------------:|
+| Critically Endangered |                 1 |
+| Endangered            |                42 |
+| Vulnerable            |                27 |
+| Near Threatened       |                20 |
+| Least Concern         |                29 |
+| Data Deficient        |                 8 |
+| Not Evaluated         |                 0 |
+| Total                 |               127 |
 
-``` r
-#library(mtsta)
-## basic example code
-```
+### Number of endemic tree species by country in the tropical Andes (Calderón et al. 2002; IUCN 2010; León-Yánez et al. 2011; León et al. 2006; Llamozas et al. 2003; Meneses and Beck 2005) together with the results of this regional assessment.
 
-What is special about using `README.Rmd` instead of just `README.md`?
-You can include R chunks like so:
-
-``` r
-summary(cars)
-#>      speed           dist       
-#>  Min.   : 4.0   Min.   :  2.00  
-#>  1st Qu.:12.0   1st Qu.: 26.00  
-#>  Median :15.0   Median : 36.00  
-#>  Mean   :15.4   Mean   : 42.98  
-#>  3rd Qu.:19.0   3rd Qu.: 56.00  
-#>  Max.   :25.0   Max.   :120.00
-```
-
-You’ll still need to render `README.Rmd` regularly, to keep `README.md`
-up-to-date. `devtools::build_readme()` is handy for this. You could also
-use GitHub Actions to re-render `README.Rmd` every time you push. An
-example workflow can be found here:
-<https://github.com/r-lib/actions/tree/master/examples>.
-
-You can also embed plots, for example:
-
-<img src="man/figures/README-pressure-1.png" width="100%" />
-
-In that case, don’t forget to commit and push the resulting figure
-files, so they display on GitHub and CRAN.
+| Country             |  CR |  EN |  VU |  NT |  LC |  DD | Subtotal |  NE | Total |
+|:--------------------|----:|----:|----:|----:|----:|----:|---------:|----:|------:|
+| Ecuador             |   2 |  36 |  52 |   9 |   5 |   1 |      105 |  61 |   166 |
+| Peru                |   9 |  31 |  15 |   2 |   3 |  10 |       70 |  50 |   120 |
+| Colombia            |   4 |   5 |   5 |   2 |   1 |   0 |       17 |  60 |    77 |
+| Bolivia             |   0 |   5 |   1 |   0 |   0 |   1 |        7 |  94 |   101 |
+| Argentina           |   0 |   0 |   0 |   0 |   0 |   0 |        0 |   3 |     3 |
+| Venezuela           |   0 |   0 |   0 |   0 |   0 |   0 |        0 |   0 |     0 |
+| Total endemic       |  15 |  77 |  73 |  13 |   9 |  12 |      199 | 268 |   467 |
+| Regional assessment |   1 |  42 |  27 |  20 |  29 |   8 |      127 |   0 |   127 |
+| Total Andes         |  16 | 119 | 100 |  33 |  38 |  20 |      326 | 268 |   594 |
