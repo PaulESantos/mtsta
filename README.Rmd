@@ -54,10 +54,11 @@ summ_df |>
   knitr::kable()
 ```
 
-###  Number of endemic tree species by country in the tropical Andes (Calderón et al. 2002; IUCN 2010; León-Yánez et al. 2011; León et al. 2006; Llamozas et al. 2003; Meneses and Beck 2005) together with the results of this regional assessment.
+###  Number of endemic tree species by country in the tropical Andes.
+(Calderón et al. 2002; IUCN 2010; León-Yánez et al. 2011; León et al. 2006; Llamozas et al. 2003; Meneses and Beck 2005).
 
 
-```{r summary_2, echo=FALSE}
+```{r summary_2, echo=FALSE, fig.align='center'}
 summ_2 <- tibble::tribble(
                ~Country, ~CR,  ~EN,  ~VU, ~NT, ~LC, ~DD, ~Subtotal,  ~NE, ~Total,
               "Ecuador",  2L,  36L,  52L,  9L,  5L,  1L,      105L,  61L,   166L,
@@ -73,5 +74,11 @@ summ_2 <- tibble::tribble(
 
 summ_2 |> 
   knitr::kable()
+```
+
+### Number of species per country that were evaluated using the RL categories and criteria.
+
+```{r summary_3, echo=FALSE, fig.align = "center"}
+knitr::include_graphics("plots/countries.png")
 ```
 

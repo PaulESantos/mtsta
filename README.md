@@ -43,7 +43,10 @@ install.packages("mtsta")
 | Not Evaluated         |                 0 |
 | Total                 |               127 |
 
-### Number of endemic tree species by country in the tropical Andes (Calderón et al. 2002; IUCN 2010; León-Yánez et al. 2011; León et al. 2006; Llamozas et al. 2003; Meneses and Beck 2005) together with the results of this regional assessment.
+### Number of endemic tree species by country in the tropical Andes.
+
+(Calderón et al. 2002; IUCN 2010; León-Yánez et al. 2011; León et
+al. 2006; Llamozas et al. 2003; Meneses and Beck 2005).
 
 | Country             |  CR |  EN |  VU |  NT |  LC |  DD | Subtotal |  NE | Total |
 |:--------------------|----:|----:|----:|----:|----:|----:|---------:|----:|------:|
@@ -56,3 +59,7 @@ install.packages("mtsta")
 | Total endemic       |  15 |  77 |  73 |  13 |   9 |  12 |      199 | 268 |   467 |
 | Regional assessment |   1 |  42 |  27 |  20 |  29 |   8 |      127 |   0 |   127 |
 | Total Andes         |  16 | 119 | 100 |  33 |  38 |  20 |      326 | 268 |   594 |
+
+### Number of species per country that were evaluated using the RL categories and criteria.
+
+<img src="plots/countries.png" width="100%" style="display: block; margin: auto;" />
