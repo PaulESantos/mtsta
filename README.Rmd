@@ -59,6 +59,8 @@ The `search_mtsta()` function takes a list of species names (`splist`) and a max
 
 ## Acknowledgments
 
+A team of Regional Red List of Montane Tree Species of the Tropical Andes (2014). The research was carried out by Natalia Tejedor Garavito from Bournemouth University in collaboration with BGCI and over 20 regional experts. Source data [here](https://www.bgci.org/resources/bgci-tools-and-resources/the-regional-red-list-of-montane-tree-species-of-the-tropical-andes/)
+
 The curated base data used in this package was reviewed and validated using the [Taxonomic Name Resolution Service TNRS](https://tnrs.biendata.org/). The TNRS is a computer-assisted tool for standardizing plant scientific names, correcting spelling errors, and resolving out-of-date names to the current accepted names. We are grateful for the contribution of the TNRS in validating the accuracy of the base data.
 
 ### Summary of results of this regional Red List report:
@@ -103,9 +105,4 @@ summ_2 |>
   knitr::kable()
 ```
 
-### Number of species per country that were evaluated using the RL categories and criteria.
-
-```{r summary_3, echo=FALSE, fig.align = "center"}
-knitr::include_graphics("plots/countries.png")
-```
 

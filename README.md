@@ -65,6 +65,12 @@ distance, the result will show `"nill"` for the matched species name.
 
 ## Acknowledgments
 
+A team of Regional Red List of Montane Tree Species of the Tropical
+Andes (2014). The research was carried out by Natalia Tejedor Garavito
+from Bournemouth University in collaboration with BGCI and over 20
+regional experts. Source data
+[here](https://www.bgci.org/resources/bgci-tools-and-resources/the-regional-red-list-of-montane-tree-species-of-the-tropical-andes/)
+
 The curated base data used in this package was reviewed and validated
 using the [Taxonomic Name Resolution Service
 TNRS](https://tnrs.biendata.org/). The TNRS is a computer-assisted tool
@@ -102,7 +108,3 @@ al. 2006; Llamozas et al. 2003; Meneses and Beck 2005).
 | Total endemic       |  15 |  77 |  73 |  13 |   9 |  12 |      199 | 268 |   467 |
 | Regional assessment |   1 |  42 |  27 |  20 |  29 |   8 |      127 |   0 |   127 |
 | Total Andes         |  16 | 119 | 100 |  33 |  38 |  20 |      326 | 268 |   594 |
-
-### Number of species per country that were evaluated using the RL categories and criteria.
-
-<img src="plots/countries.png" width="100%" style="display: block; margin: auto;" />
