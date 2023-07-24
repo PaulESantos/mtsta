@@ -53,6 +53,25 @@ result <- search_mtsta(splist, max_distance = 0.1)
 print(result)
 ```
 
+``` r
+name_submitted       name_matched      accepted_name accepted_family
+1 Aphelandra acantasa                                                      
+2    Saurauia lehmani Saurauia lehmannii Saurauia lehmannii   Actinidiaceae
+3   Saurauia bullosaa   Saurauia bullosa   Saurauia bullosa   Actinidiaceae
+4     Schinus meyerii     Schinus meyeri     Schinus meyeri   Anacardiaceae
+5     Ilex colombiana    Ilex colombiana    Ilex colombiana   Aquifoliaceae
+6      Ilex rimbachii     Ilex rimbachii     Ilex rimbachii   Aquifoliaceae
+7     Ilex scopulorum    Ilex scopulorum    Ilex scopulorum   Aquifoliaceae
+  accepted_genus           iucn       distribution unsure_distribution     elevation
+1                                                                                   
+2       Saurauia             NT  Colombia, Ecuador                <NA>  up to 3000 m
+3       Saurauia             LC  Colombia, Ecuador                <NA> 1500 – 4000 m
+4        Schinus   VU B2ab(iii) Argentina, Bolivia                <NA> 1600 - 2100 m
+5           Ilex EN B2ab(iii,v)  Colombia, Ecuador                <NA> 3300 - 3600 m
+6           Ilex             NT      Ecuador, Peru                <NA> 2000 - 3000 m
+7           Ilex             NT      Ecuador, Peru                <NA> 2000 - 3500 m
+```
+
 ## Description
 
 The `search_mtsta()` function takes a list of species names (`splist`)
