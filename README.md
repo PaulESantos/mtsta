@@ -14,21 +14,64 @@ status](https://www.r-pkg.org/badges/version/mtsta)](https://CRAN.R-project.org/
 
 <!-- badges: end -->
 
-This Red List of the tree species of the montane forests of the tropical
-Andes forms part of an ongoing research project to assess the
-conservation status and impact of climate change on the world’s montane
-tree species - trees at the “Top of the World”. The scope of this report
-is the tropical Andes in **Argentina, Bolivia, Colombia, Ecuador, Peru
-and Venezuela**
+## Overview
+
+The `mtsta` package provides a powerful tool for searching and matching
+species names in the montane forests of the Tropical Andes region. It
+allows users to input a list of species names and find the closest
+matching names from a curated base data of montane tree species in the
+region. The matching process takes into account both exact matches and
+fuzzy matches based on a user-defined maximum distance threshold.
 
 ## Installation
 
-You can install the released version of mtsta from
-[CRAN](https://CRAN.R-project.org) with:
+You can install the mtsta package from GitHub using the devtools
+library:
 
 ``` r
-install.packages("mtsta")
+pak::pak("PaulESantos/mtsta")
 ```
+
+## Usage
+
+To use the `mtsta` package, simply load it and call the `search_mtsta()`
+function with your list of species names as the input:
+
+``` r
+library(mtsta)
+
+# Example species list
+splist <- c("Aphelandra acantasa",
+            "Saurauia lehmani",
+            "Saurauia bullosaa",
+            "Schinus meyerii",
+            "Ilex colombiana",
+            "Ilex rimbachii",
+            "Ilex scopulorum")
+
+result <- search_mtsta(splist, max_distance = 0.1)
+print(result)
+```
+
+## Description
+
+The `search_mtsta()` function takes a list of species names (`splist`)
+and a maximum distance value (`max_distance`) as input. It performs
+fuzzy matching and exact matching to find the closest matching species
+names in the curated base data of montane tree species in the Tropical
+Andes region. The output is a data frame with data for the submitted
+species name. If no match is found within the specified maximum
+distance, the result will show `"nill"` for the matched species name.
+
+## Acknowledgments
+
+The curated base data used in this package was reviewed and validated
+using the [Taxonomic Name Resolution Service
+TNRS](https://tnrs.biendata.org/). The TNRS is a computer-assisted tool
+for standardizing plant scientific names, correcting spelling errors,
+and resolving out-of-date names to the current accepted names. We are
+grateful for the contribution of the TNRS in validating the accuracy of
+the base data.
 
 ### Summary of results of this regional Red List report:
 
