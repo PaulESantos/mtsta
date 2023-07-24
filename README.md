@@ -54,7 +54,7 @@ print(result)
 ```
 
 ``` r
-name_submitted       name_matched      accepted_name accepted_family
+name_submitted              name_matched      accepted_name accepted_family
 1 Aphelandra acantasa                                                      
 2    Saurauia lehmani Saurauia lehmannii Saurauia lehmannii   Actinidiaceae
 3   Saurauia bullosaa   Saurauia bullosa   Saurauia bullosa   Actinidiaceae
