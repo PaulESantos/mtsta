@@ -12,6 +12,9 @@ status](https://www.r-pkg.org/badges/version/mtsta)](https://CRAN.R-project.org/
 [![](http://cranlogs.r-pkg.org/badges/grand-total/mtsta?color=green)](https://cran.r-project.org/package=mtsta)
 [![](http://cranlogs.r-pkg.org/badges/last-week/mtsta?color=green)](https://cran.r-project.org/package=mtsta)
 
+[![R-CMD-check](https://github.com/PaulESantos/mtsta/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/PaulESantos/mtsta/actions/workflows/R-CMD-check.yaml)
+[![Codecov test
+coverage](https://codecov.io/gh/PaulESantos/mtsta/branch/main/graph/badge.svg)](https://app.codecov.io/gh/PaulESantos/mtsta?branch=main)
 <!-- badges: end -->
 
 ## Overview
@@ -25,8 +28,7 @@ fuzzy matches based on a user-defined maximum distance threshold.
 
 ## Installation
 
-You can install the mtsta package from GitHub using the devtools
-library:
+You can install the `mtsta` package from GitHub using:
 
 ``` r
 pak::pak("PaulESantos/mtsta")

@@ -2,7 +2,7 @@
 title: "Montane Tree Species of the Tropical Andes"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Montane Tree Species of the Tropical Andes"}
+  %\VignetteIndexEntry{"Montane Tree Species of the Tropical Andes"}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---

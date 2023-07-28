@@ -31,7 +31,7 @@ library(mtsta)
 The `mtsta` package provides a powerful tool for searching and matching species names in the montane forests of the Tropical Andes region. It allows users to input a list of species names and find the closest matching names from a curated base data of montane tree species in the region. The matching process takes into account both exact matches and fuzzy matches based on a user-defined maximum distance threshold.
 
 ## Installation
-You can install the mtsta package from GitHub using the devtools library:
+You can install the `mtsta` package from GitHub using:
 
 ``` r
 pak::pak("PaulESantos/mtsta")
