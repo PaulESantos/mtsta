@@ -50,7 +50,10 @@ splist <- c("Aphelandra acantasa",
             "Ilex rimbachii",
             "Ilex scopulorum")
 
-search_mtsta(splist, max_distance = 0.1)
+mtsta::search_mtsta(splist, max_distance = 0.1) |> 
+  dplyr::select(name_submitted, name_matched, accepted_name, accepted_family,
+                taxonomic_status, distance) |> 
+  tibble::as_tibble()
 
 
 ```
@@ -60,14 +63,15 @@ search_mtsta(splist, max_distance = 0.1)
 
 ```{r}
 
-search_mtsta_distribution(splist = splist)
+mtsta::search_mtsta_distribution(splist = splist) |> 
+  tibble::as_tibble()
 ```
 
 
 
 ## Description
 
-The `search_mtsta()` function takes a list of species names (`splist`) and a maximum distance value (`max_distance`) as input. It performs fuzzy matching and exact matching to find the closest matching species names in the curated base data of montane tree species in the Tropical Andes region. The output is a data frame with data for the submitted species name. If no match is found within the specified maximum distance, the result will show `"nill"` for the matched species name.
+The `search_mtsta()` and `search_mtsta_distribution()` functions takes a list of species names (`splist`) and a maximum distance value (`max_distance`) as input. It performs fuzzy matching and exact matching to find the closest matching species names in the curated base data of montane tree species in the Tropical Andes region. The output is a data frame with data for the submitted species name. If no match is found within the specified maximum distance, the result will show `"nill"` for the matched species name.
 
 ## Acknowledgments
 

@@ -15,13 +15,12 @@ knitr::opts_chunk$set(
 ```
 
 ```{r setup}
-library(tidyverse)
 library(mtsta)
 ```
 
 - Summary of results of this regional Red List report:
 
-```{r summary_1, echo=FALSE}
+```{r echo=FALSE}
 summ_df <- tibble::tribble(
      ~Conservation.status, ~tag, ~Number.of.species,
   "Critically Endangered", "CR",                 1L,
