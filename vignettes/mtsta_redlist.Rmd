@@ -65,7 +65,7 @@ summ_2 |>
 
 - Number of species per country that were evaluated
 
-```{r}
+```{r echo=FALSE}
 summarie_3 <- mtsta::mtsta_distribution |> 
   dplyr::select(accepted_name, distribution) |> 
   dplyr::mutate(distribution = dplyr::case_when(
@@ -78,7 +78,9 @@ summarie_3 <- mtsta::mtsta_distribution |>
   tidyr::separate_rows(distribution, sep = " - ") |> 
   dplyr::group_by(distribution) |> 
   dplyr::summarise(n_species = dplyr::n_distinct(accepted_name))
+```
 
+```{r echo=FALSE, fig.height=5, fig.width= 8}
 summarie_3 |> 
   ggplot2::ggplot(ggplot2::aes(forcats::fct_reorder(distribution, n_species, .desc = TRUE),
                                n_species)) +

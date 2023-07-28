@@ -86,7 +86,7 @@ search_mtsta_distribution <- function(splist, max_distance = 0.1, typedf = "main
     }
     # build an output result from mtsta data
     if (matches1 == "nill") {
-      row_data <- rep("nill", 5)
+      row_data <- rep("nill", 6)
     } else {
       row_data <- as.matrix(mtsta::mtsta_distribution[mtsta::mtsta_distribution$species_name == matches1,])
 
