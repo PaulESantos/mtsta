@@ -8,3 +8,4 @@ R/as.R
 ^_pkgdown\.yml$
 ^docs$
 ^pkgdown$
+^codecov\.yml$
