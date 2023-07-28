@@ -2,3 +2,5 @@ url: https://paulesantos.github.io/mtsta/
 template:
   bootstrap: 5
 
+development:
+  mode: devel
