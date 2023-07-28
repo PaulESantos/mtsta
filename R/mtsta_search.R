@@ -94,18 +94,20 @@ search_mtsta <- function(splist, max_distance = 0.1, ...) {
     # check non matching result
     if (length(matches) == 0) {
       matches1 <- "nill"
-      dis_value <- ""
+      dis_val_1 <- ""
     } else { # match result
-      matches1 <- matches
+
       dis_value <- as.numeric(utils::adist(splist_std[i], matches))
+      matches1 <- matches[dis_value <= max_distance_fixed]
+      dis_val_1 <- dis_value[dis_value <= max_distance_fixed]
     }
     # build an output result from mtsta data
     if (matches1 == "nill") {
-      row_data <- rep("", 11)
+      row_data <- rep("nill", 11)
     } else {
       row_data <- as.matrix(mtsta::mtsta_tab[mtsta::mtsta_tab$species_name == matches1,])
     }
-    output_matrix[i, ] <- c(splist_std[i], row_data, dis_value)
+    output_matrix[i, ] <- c(splist_std[i], row_data, dis_val_1)
   }
 
   return(as.data.frame(output_matrix))

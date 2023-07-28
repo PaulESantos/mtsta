@@ -1,9 +1,7 @@
-context("Testing search_mtsta function")
-
 test_that("Output should be a data frame", {
   input_species <- c("Saurauia lehmannii", "Schinus meyeri", "Ilex colombiana")
   output <- search_mtsta(input_species, max_distance = 0.1)
-  expect_is(output, "data.frame")
+  expect_s3_class(output, "data.frame")
 })
 
 test_that("Output should have correct column names", {
@@ -31,5 +29,3 @@ test_that("Output should have correct number of rows", {
   expected_rows <- length(input_species)
   expect_equal(nrow(output), expected_rows)
 })
-
-# Agrega más pruebas según los casos de uso específicos que desees validar
