@@ -18,7 +18,7 @@ library(mtsta)
 
 
 <!-- badges: start -->
-[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html)
+[![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-green.svg)](https://lifecycle.r-lib.org/articles/stages.html)
 [![CRAN status](https://www.r-pkg.org/badges/version/mtsta)](https://CRAN.R-project.org/package=mtsta)
 [![](http://cranlogs.r-pkg.org/badges/grand-total/mtsta?color=green)](https://cran.r-project.org/package=mtsta)
 [![](http://cranlogs.r-pkg.org/badges/last-week/mtsta?color=green)](https://cran.r-project.org/package=mtsta)
