@@ -3,7 +3,7 @@ pkgdown: 2.0.7
 pkgdown_sha: ~
 articles:
   mtsta_redlist: mtsta_redlist.html
-last_built: 2024-04-07T03:28Z
+last_built: 2024-04-07T03:34Z
 urls:
   reference: https://paulesantos.github.io/mtsta/reference
   article: https://paulesantos.github.io/mtsta/articles
